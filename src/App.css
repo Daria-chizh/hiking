@@ -19,22 +19,137 @@
   margin-right: auto;
 }
 
+.image {
+  display: block;
+  margin-top: -40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  height: 650px;
+}
+
+.description {
+  font-size: 20px;
+  margin-top: 15px;
+  text-align: left;
+
+}
+
+.description-page {
+  text-align: center;
+}
+
+.buttons {
+ text-align: center;
+  margin-top: 50px;
+}
+
+.map {
+  border: 1px solid white;
+  background-color: steelblue;
+  border-radius: 40px;
+  width: 180px;
+  height: 70px;
+  font-size: 25px;
+  margin-right: 50px;
+  color: white;
+}
+
+.routes {
+  border: 1px solid white;
+  background-color: steelblue;
+  border-radius: 40px;
+  width: 200px;
+  height: 70px;
+  font-size: 25px;
+  color: white;
+}
+
+.return {
+  font-size: 20px;
+  border: 1px solid white;
+  background-color: white;
+  width: 100px;
+}
+
+.return-link {
+  text-decoration: none;
+  color: black;
+}
+
+.routes-link {
+  text-decoration: none;
+  color: white;
+}
+
+.total-container {
+  display: flex;
+}
+.container {
+  display: flex;
+  width: 600px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.column {
+  padding: 10px;
+  width: 500px;
+  height: 135px;
+  border: 3px solid lightgray;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
 
 
-/*.search {*/
-/*  width: 700px;*/
-/*  margin-top: 20px;*/
-/*}*/
+.plus {
+  cursor: pointer;
+  text-align: end;
+  margin-top: 10px;
+  font-size: 20px;
+  color: gray;
+  margin-right: 10px;
+}
 
+.path-name {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: -25px;
+  font-weight: bold;
+}
 
-/*.search {*/
-/*  width: 700px;*/
-/*  height: 50px;*/
-/*  border-radius: 50px;*/
-/*  border: 1px solid gray;*/
-/*  box-sizing: border-box;*/
-/*}*/
+.path-distance,
+.path-elevation,
+.path-time {
+  margin-left: 10px;
+  margin-top: 10px;
+  color: grey;
+}
 
-/*.input {*/
-/*  text-align: center;*/
-/*}*/
+.search-container {
+  text-align: center;
+}
+
+.search {
+  width: 700px;
+  height: 40px;
+  border: 1px solid gainsboro;
+  border-radius: 50px;
+}
+
+.my-completed {
+ text-align: end;
+}
+
+.won {
+  margin-top: -30px;
+  font-size: 40px;
+}
+
+.icon-first-page {
+  margin-top:-50px;
+}
