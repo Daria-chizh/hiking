@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import RegionShort from './RegionShort';
-import MyCompleted from "../descriptions/MyCompleted";
+import { regionsRoutes } from './regionsRoutes';
+// import MyCompleted from "../descriptions/MyCompleted";
+
 
 const regions = [
   { regionId: 1, name: 'Гремячая грива', img: 'http://photos.wikimapia.org/p/00/06/51/55/95_1280.jpg' },
@@ -20,10 +22,19 @@ const regions = [
 function Regions() {
   const [searchText, setSearchText] = useState();
 
+
   const handleValueText = ({ target: { value } }) => {
     setSearchText(value);
+    const matchedRoutes = [];
 
-    // const matchedRoutes = [];
+    for (const element of regionsRoutes) {
+      for (const route of element.routes) {
+        if (route.name.includes(value)) {
+          matchedRoutes.push(route);
+        }
+      }
+
+    }
     // for..of
     // route.name.includes(value)
 
@@ -33,10 +44,11 @@ function Regions() {
   return (
     <div>
       <div className="search-container">
-        <input type="search" className="search" placeholder="  Поиск..." value={searchText} onChange={handleValueText}/>
+        <input type="search" className="search" placeholder="Поиск..." value={searchText} onChange={handleValueText}/>
       </div>
-      <div className="icon-first-page">{MyCompleted()}</div>
+
       {regions.map((region) => <RegionShort region={region} />) }
+
     </div>
   );
 }

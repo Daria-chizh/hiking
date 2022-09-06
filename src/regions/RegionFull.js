@@ -86,7 +86,11 @@ function RegionFull() {
     <button className="return">
       <a href="/" className="return-link">🡰 Назад</a>
     </button>
-    <div>{MyCompleted()}</div>
+
+    <div className="completed">
+      <a href={`/region/${regionId}/completed`} className="completed-image">{MyCompleted()}</a>
+    </div>
+
     <div className="second-page">
       <img src={region.img} className="image" />
       <div className="description">{region.description}</div>

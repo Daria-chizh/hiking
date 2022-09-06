@@ -1,41 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a299c05-ce8f-4489-a6d4-1721b907a09d" name="Default Changelist" comment="I made first page">
-      <change afterPath="$PROJECT_DIR$/src/descriptions/BaikalLake.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/descriptions/Divnogorsk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/descriptions/Ergaki.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/descriptions/Griva.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/descriptions/IvanovskiyLakes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/descriptions/KachinskieStolbi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/descriptions/KaraulnoeNagore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/descriptions/KrasnoyarskStolbi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/descriptions/KuturchinskoeBelogorie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/descriptions/MininStolbi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/descriptions/MyCompleted.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/descriptions/ShushenskyBor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/descriptions/TorgashinskkyRidge.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actions/actionCreators.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actions/actionTypes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers/routeReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/store/localStorageMiddleware.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/regions/AddNewRoutes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/regions/PathsLinkShort.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/regions/RegionFull.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/regions/RegionRoutes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/regions/regionsRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="0a299c05-ce8f-4489-a6d4-1721b907a09d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AllRoute/Route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/RegionShort.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AllRoute/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/Regions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DescribeRoute.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DescribeRoutes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/descriptions/MyCompleted.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/descriptions/MyCompleted.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/regions/AddNewRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/AddNewRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/regions/RegionFull.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/RegionFull.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/regions/RegionRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/RegionRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/regions/Regions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/Regions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +80,7 @@
       <workItem from="1661070778108" duration="92000" />
       <workItem from="1661071286423" duration="22376000" />
       <workItem from="1661316441870" duration="1466000" />
-      <workItem from="1661318821764" duration="45420000" />
+      <workItem from="1661318821764" duration="51406000" />
     </task>
     <task id="LOCAL-00001" summary="I made first page">
       <created>1657604560294</created>
@@ -116,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657604560294</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="I made AddNewRoutes page">
+      <created>1662443013556</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662443013556</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +115,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="I made first page" />
-    <option name="LAST_COMMIT_MESSAGE" value="I made first page" />
+    <MESSAGE value="I made AddNewRoutes page" />
+    <option name="LAST_COMMIT_MESSAGE" value="I made AddNewRoutes page" />
   </component>
 </project>

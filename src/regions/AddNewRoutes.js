@@ -1,11 +1,10 @@
 import React from 'react';
-
 import { useParams } from 'react-router';
 import { regionsRoutes } from './regionsRoutes';
 import { useSelector, useDispatch } from 'react-redux';
-import {addRouteToCompleted, removeRouteFromCompleted} from "../redux/actions/actionCreators";
+import {removeRouteFromCompleted} from "../redux/actions/actionCreators";
 import MyCompleted from "../descriptions/MyCompleted";
-// import MyCompleted from "../descriptions/MyCompleted";
+
 
 function AddNewRoutes() {
   const { regionId } = useParams();
@@ -13,22 +12,25 @@ function AddNewRoutes() {
 
   const finishedRouteIds = useSelector((state) => state.routes);
   let finishedRoutes = [];
-  // let unfinishedRoutes = [];
-  //
-  // // создать finishedRoutes - массив пройденных маршрутов, маршруты с id из массива finishedRouteIds
-  // // создать unfinishedRoutes - массив непройденных маршрутов
   const regionRoutes = regionsRoutes.find(({ id }) => String(id) === String(regionId)).routes;
-  //
   for (const item of regionRoutes) {
     if (finishedRouteIds.includes(item.id)) {
       finishedRoutes.push(item);
     }
   }
-  // const handleAddNewRoute = (routeId) => {
-  //   dispatch(addRouteToCompleted(routeId));
-  // };
-  //
-  //
+
+  if (finishedRoutes.length === 0) {
+    return(
+      <div>
+        <button className="return">
+          <a href={`/routes/${regionId}`} className="return-link">🡰 Назад</a>
+        </button>
+        <div className="none-paths">У вас нет пройденных маршрутов!</div>
+        <div className="stop">⛔</div>
+      </div>
+    )
+  }
+
   const handleRemoveNewRoute = (routeId) => {
     dispatch(removeRouteFromCompleted(routeId))
   }
@@ -36,7 +38,7 @@ function AddNewRoutes() {
   return (
     <div>
       <button className="return">
-        <a href={`/region/${regionId}`} className="return-link">🡰 Назад</a>
+        <a href={`/routes/${regionId}`} className="return-link">🡰 Назад</a>
       </button>
 
       <div className="completed">
