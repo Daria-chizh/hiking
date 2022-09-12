@@ -143,6 +143,21 @@
   padding-left:15px;
 }
 
+.search-element {
+  width: 250px;
+  border: 1px solid darkseagreen;
+  border-radius: 10px;
+  color:darkgray;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left:10px;
+  padding-top: 0;
+}
+
+.search-field {
+}
+
 .my-completed {
  text-align: end;
 }

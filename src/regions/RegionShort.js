@@ -2,6 +2,7 @@ import React from 'react';
 
 function RegionShort(props) {
   const { region } = props;
+
   return <>
     <div className="names">{region.name}</div>
     <a href= {`/region/${region.regionId}`}>

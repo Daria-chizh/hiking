@@ -1,18 +1,20 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import Griva from "../descriptions/Griva";
-import TorgashinskkyRidge from "../descriptions/TorgashinskkyRidge";
-import KrasnoyarskStolbi from "../descriptions/KrasnoyarskStolbi";
-import Ergaki from "../descriptions/Ergaki";
-import MininStolbi from "../descriptions/MininStolbi";
-import KaraulnoeNagore from "../descriptions/KaraulnoeNagore";
-import BaikalLake from "../descriptions/BaikalLake";
-import ShushenskyBor from "../descriptions/ShushenskyBor";
-import KuturchinskoeBelogorie from "../descriptions/KuturchinskoeBelogorie";
-import KachinskieStolbi from "../descriptions/KachinskieStolbi";
-import IvanovskiyLakes from "../descriptions/IvanovskiyLakes";
-import Divnogorsk from "../descriptions/Divnogorsk";
-import MyCompleted from "../descriptions/MyCompleted";
+
+import Griva from '../descriptions/Griva';
+import TorgashinskkyRidge from '../descriptions/TorgashinskkyRidge';
+import KrasnoyarskStolbi from '../descriptions/KrasnoyarskStolbi';
+import Ergaki from '../descriptions/Ergaki';
+import MininStolbi from '../descriptions/MininStolbi';
+import KaraulnoeNagore from '../descriptions/KaraulnoeNagore';
+import BaikalLake from '../descriptions/BaikalLake';
+import ShushenskyBor from '../descriptions/ShushenskyBor';
+import KuturchinskoeBelogorie from '../descriptions/KuturchinskoeBelogorie';
+import KachinskieStolbi from '../descriptions/KachinskieStolbi';
+import IvanovskiyLakes from '../descriptions/IvanovskiyLakes';
+import Divnogorsk from '../descriptions/Divnogorsk';
+
+import CompletedIcon from "./CompletedIcon";
 
 const regions = [
   {
@@ -87,9 +89,11 @@ function RegionFull() {
       <a href="/" className="return-link">🡰 Назад</a>
     </button>
 
-    <div className="completed">
-      <a href={`/region/${regionId}/completed`} className="completed-image">{MyCompleted()}</a>
-    </div>
+    <CompletedIcon regionId={regionId} />
+
+    {/*<div className="completed">*/}
+    {/*  <a href={`/region/${regionId}/completed`} className="completed-image">{CompletedIcon()}</a>*/}
+    {/*</div>*/}
 
     <div className="second-page">
       <img src={region.img} className="image" />
@@ -97,7 +101,7 @@ function RegionFull() {
       <div className="buttons">
         <button className="map">Карта</button>
         <button className="routes">
-          <a href={`/routes/${regionId}`} className="routes-link">Маршруты</a>
+          <a href={`/region/${regionId}/routes`} className="routes-link">Маршруты</a>
         </button>
       </div>
     </div>

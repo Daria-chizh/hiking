@@ -1,29 +1,23 @@
 import React from 'react';
 import { useParams } from 'react-router';
-import { regionsRoutes } from './regionsRoutes';
 import { useSelector, useDispatch } from 'react-redux';
-import {removeRouteFromCompleted} from "../redux/actions/actionCreators";
-import MyCompleted from "../descriptions/MyCompleted";
 
+import { removeRouteFromCompleted } from '../redux/actions/actionCreators';
+import CompletedIcon from './CompletedIcon';
+import { filterRoutesByCompleteness } from '../utilities/routes';
 
-function AddNewRoutes() {
+function CompletedRoutes() {
   const { regionId } = useParams();
   const dispatch = useDispatch();
 
-  const finishedRouteIds = useSelector((state) => state.routes);
-  let finishedRoutes = [];
-  const regionRoutes = regionsRoutes.find(({ id }) => String(id) === String(regionId)).routes;
-  for (const item of regionRoutes) {
-    if (finishedRouteIds.includes(item.id)) {
-      finishedRoutes.push(item);
-    }
-  }
+  const completedRouteIds = useSelector((state) => state.routes);
+  const completedRoutes = filterRoutesByCompleteness(regionId, completedRouteIds, true);
 
-  if (finishedRoutes.length === 0) {
+  if (completedRoutes.length === 0) {
     return(
       <div>
         <button className="return">
-          <a href={`/routes/${regionId}`} className="return-link">🡰 Назад</a>
+          <a href={`/region/${regionId}/routes`} className="return-link">🡰 Назад</a>
         </button>
         <div className="none-paths">У вас нет пройденных маршрутов!</div>
         <div className="stop">⛔</div>
@@ -38,17 +32,15 @@ function AddNewRoutes() {
   return (
     <div>
       <button className="return">
-        <a href={`/routes/${regionId}`} className="return-link">🡰 Назад</a>
+        <a href={`/region/${regionId}/routes`} className="return-link">🡰 Назад</a>
       </button>
 
-      <div className="completed">
-        <a href={`/region/${regionId}/completed`} className="completed-image">{MyCompleted()}</a>
-      </div>
+      <CompletedIcon regionId={regionId} />
 
       <div className="total-container">
         <div className="container">
           {
-            finishedRoutes.map((item, idx) =>
+            completedRoutes.map((item, idx) =>
               <div className="column" key={`route-${idx}`}>
                 <div className="plus" onClick={() => handleRemoveNewRoute(item.id)}>✖</div>
                 <div className="path-name"> {item.name} </div>
@@ -63,4 +55,4 @@ function AddNewRoutes() {
     </div>
   );
 }
-export default AddNewRoutes;
+export default CompletedRoutes;
