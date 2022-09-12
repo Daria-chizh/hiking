@@ -91,10 +91,6 @@ function RegionFull() {
 
     <CompletedIcon regionId={regionId} />
 
-    {/*<div className="completed">*/}
-    {/*  <a href={`/region/${regionId}/completed`} className="completed-image">{CompletedIcon()}</a>*/}
-    {/*</div>*/}
-
     <div className="second-page">
       <img src={region.img} className="image" />
       <div className="description">{region.description}</div>

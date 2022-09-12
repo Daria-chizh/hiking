@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { removeRouteFromCompleted } from '../redux/actions/actionCreators';
 import CompletedIcon from './CompletedIcon';
 import { filterRoutesByCompleteness } from '../utilities/routes';
+import RoutesList from './RoutesList';
 
 function CompletedRoutes() {
   const { regionId } = useParams();
@@ -36,22 +37,7 @@ function CompletedRoutes() {
       </button>
 
       <CompletedIcon regionId={regionId} />
-
-      <div className="total-container">
-        <div className="container">
-          {
-            completedRoutes.map((item, idx) =>
-              <div className="column" key={`route-${idx}`}>
-                <div className="plus" onClick={() => handleRemoveNewRoute(item.id)}>✖</div>
-                <div className="path-name"> {item.name} </div>
-                <div className="path-distance">Расстояние: {item.distance}</div>
-                <div className="path-elevation"> Набор высоты: {item.elevation} </div>
-                <div className="path-time"> Среднее время прохождения: {item.averagePassageTime}</div>
-              </div>
-            )
-          }
-        </div>
-      </div>
+      <RoutesList routes={completedRoutes} actionText='✖' actionFunction={handleRemoveNewRoute} />
     </div>
   );
 }

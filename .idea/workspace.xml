@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a299c05-ce8f-4489-a6d4-1721b907a09d" name="Default Changelist" comment="I made Search">
-      <change afterPath="$PROJECT_DIR$/src/regions/RoutesSearch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utilities/routes.js" afterDir="false" />
+    <list default="true" id="0a299c05-ce8f-4489-a6d4-1721b907a09d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/regions/RoutesList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/descriptions/MyCompleted.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/CompletedIcon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/regions/AddNewRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/CompletedRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/regions/PathsLinkShort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/regions/CompletedRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/CompletedRoutes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/regions/RegionFull.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/RegionFull.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/regions/RegionRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/RegionRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/regions/RegionShort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/RegionShort.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/regions/Regions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/Regions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/regions/regionsRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/data/regionsRoutes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +37,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Mark\Desktop\hiking\src\regions\data" />
       <recent name="C:\Users\Mark\Desktop\hiking\src\regions" />
+      <recent name="C:\Users\Mark\Desktop\hiking\src\regions\data" />
       <recent name="C:\Users\Mark\Desktop\hiking\src\Descriptions" />
       <recent name="C:\Users\Mark\Desktop\hiking\src\Route" />
     </key>
@@ -88,7 +80,7 @@
       <workItem from="1661070778108" duration="92000" />
       <workItem from="1661071286423" duration="22376000" />
       <workItem from="1661316441870" duration="1466000" />
-      <workItem from="1661318821764" duration="67724000" />
+      <workItem from="1661318821764" duration="68559000" />
     </task>
     <task id="LOCAL-00001" summary="I made first page">
       <created>1657604560294</created>
@@ -111,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662448896939</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="I wrote props in component of CompletedIcon">
+      <created>1662958414816</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662958414816</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +131,7 @@
     <MESSAGE value="I made first page" />
     <MESSAGE value="I made AddNewRoutes page" />
     <MESSAGE value="I made Search" />
-    <option name="LAST_COMMIT_MESSAGE" value="I made Search" />
+    <MESSAGE value="I wrote props in component of CompletedIcon" />
+    <option name="LAST_COMMIT_MESSAGE" value="I wrote props in component of CompletedIcon" />
   </component>
 </project>
