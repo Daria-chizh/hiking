@@ -6,6 +6,7 @@ import { addRouteToCompleted } from '../redux/actions/actionCreators';
 import CompletedIcon from './CompletedIcon';
 import { filterRoutesByCompleteness } from '../utilities/routes';
 import RoutesList from './RoutesList';
+import ButtonComeBack from './ButtonComeBack';
 
 function RegionRoutes() {
   const { regionId } = useParams();
@@ -20,12 +21,12 @@ function RegionRoutes() {
 
   return (
     <div>
-      <button className="return">
-        <a href={`/region/${regionId}`} className="return-link">🡰 Назад</a>
-      </button>
+      <ButtonComeBack />
+      {/*<button className="return">*/}
+      {/*  <a href={`/region/${regionId}`} className="return-link">🡰 Назад</a>*/}
+      {/*</button>*/}
 
       <CompletedIcon regionId={regionId} />
-
       <RoutesList routes={uncompletedRoutes} actionText='✔' actionFunction={handleAddNewRoute} />
     </div>
   );

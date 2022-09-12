@@ -6,6 +6,7 @@ import { removeRouteFromCompleted } from '../redux/actions/actionCreators';
 import CompletedIcon from './CompletedIcon';
 import { filterRoutesByCompleteness } from '../utilities/routes';
 import RoutesList from './RoutesList';
+import ButtonComeBack from './ButtonComeBack';
 
 function CompletedRoutes() {
   const { regionId } = useParams();
@@ -17,9 +18,11 @@ function CompletedRoutes() {
   if (completedRoutes.length === 0) {
     return(
       <div>
-        <button className="return">
-          <a href={`/region/${regionId}/routes`} className="return-link">🡰 Назад</a>
-        </button>
+        <ButtonComeBack />
+        {/*<button className="return">*/}
+        {/*  <a href={`/region/${regionId}/routes`} className="return-link">🡰 Назад</a>*/}
+        {/*</button>*/}
+
         <div className="none-paths">У вас нет пройденных маршрутов!</div>
         <div className="stop">⛔</div>
       </div>
@@ -32,9 +35,10 @@ function CompletedRoutes() {
 
   return (
     <div>
-      <button className="return">
-        <a href={`/region/${regionId}/routes`} className="return-link">🡰 Назад</a>
-      </button>
+      <ButtonComeBack />
+      {/*<button className="return">*/}
+      {/*  <a href={`/region/${regionId}/routes`} className="return-link">🡰 Назад</a>*/}
+      {/*</button>*/}
 
       <CompletedIcon regionId={regionId} />
       <RoutesList routes={completedRoutes} actionText='✖' actionFunction={handleRemoveNewRoute} />

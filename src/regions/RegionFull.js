@@ -15,6 +15,7 @@ import IvanovskiyLakes from '../descriptions/IvanovskiyLakes';
 import Divnogorsk from '../descriptions/Divnogorsk';
 
 import CompletedIcon from "./CompletedIcon";
+import ButtonComeBack from './ButtonComeBack';
 
 const regions = [
   {
@@ -85,9 +86,10 @@ function RegionFull() {
   const region = regions.find(({ id }) => String(id) === String(regionId));
 
   return <>
-    <button className="return">
-      <a href="/" className="return-link">🡰 Назад</a>
-    </button>
+    <ButtonComeBack />
+    {/*<button className="return">*/}
+    {/*  <a href="/" className="return-link">🡰 Назад</a>*/}
+    {/*</button>*/}
 
     <CompletedIcon regionId={regionId} />
 
