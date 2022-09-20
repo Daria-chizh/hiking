@@ -155,6 +155,10 @@
   padding-top: 0;
 }
 
+.link-field {
+  text-decoration: none;
+}
+
 .search-field {
 }
 
@@ -164,7 +168,7 @@
 
 .won {
   margin-top: -30px;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .icon-first-page {
@@ -184,3 +188,74 @@
   text-align:center;
   font-size: 70px;
 }
+
+.completed-routes {
+  position: relative;
+  background-position: 0 0;
+}
+
+.completed-routes-full {
+  position: absolute;
+  right: 5px;
+  top: -10px;
+  display: block;
+  height: 21px;
+  width: 21px;
+  font-size: 11px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #ff65a5 1.11%, #ff8076 100%);
+  box-shadow: 0px 2px 8px rgba(255, 101, 165, 0.6), inset 0px 1px 1px #ff8076;
+}
+.personal-column {
+  padding: 10px;
+  width: 500px;
+  height: 135px;
+  border: 3px solid lightgray;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+
+}
+
+.container-path-name {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+label,
+.comment {
+  margin-left: 10px;
+  margin-top: 10px;
+  color: grey;
+}
+
+.my-path-time {
+  width: 150px;
+  height: 20px;
+  border: 1px solid grey;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+.recommendations {
+  display: flex;
+}
+
+textarea {
+  width: 250px;
+  height: 50px;
+  border: 1px solid grey;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+
+

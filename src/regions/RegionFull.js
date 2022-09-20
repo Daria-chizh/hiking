@@ -87,10 +87,6 @@ function RegionFull() {
 
   return <>
     <ButtonComeBack />
-    {/*<button className="return">*/}
-    {/*  <a href="/" className="return-link">🡰 Назад</a>*/}
-    {/*</button>*/}
-
     <CompletedIcon regionId={regionId} />
 
     <div className="second-page">

@@ -22,10 +22,6 @@ function RegionRoutes() {
   return (
     <div>
       <ButtonComeBack />
-      {/*<button className="return">*/}
-      {/*  <a href={`/region/${regionId}`} className="return-link">🡰 Назад</a>*/}
-      {/*</button>*/}
-
       <CompletedIcon regionId={regionId} />
       <RoutesList routes={uncompletedRoutes} actionText='✔' actionFunction={handleAddNewRoute} />
     </div>

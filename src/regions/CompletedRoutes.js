@@ -19,10 +19,6 @@ function CompletedRoutes() {
     return(
       <div>
         <ButtonComeBack />
-        {/*<button className="return">*/}
-        {/*  <a href={`/region/${regionId}/routes`} className="return-link">🡰 Назад</a>*/}
-        {/*</button>*/}
-
         <div className="none-paths">У вас нет пройденных маршрутов!</div>
         <div className="stop">⛔</div>
       </div>
@@ -36,12 +32,30 @@ function CompletedRoutes() {
   return (
     <div>
       <ButtonComeBack />
-      {/*<button className="return">*/}
-      {/*  <a href={`/region/${regionId}/routes`} className="return-link">🡰 Назад</a>*/}
-      {/*</button>*/}
-
       <CompletedIcon regionId={regionId} />
       <RoutesList routes={completedRoutes} actionText='✖' actionFunction={handleRemoveNewRoute} />
+
+      <div>
+        {
+          completedRoutes.map((item, idx) =>
+              <div className="personal-column" key={`route-${idx}`}>
+                {/*<div className="plus" onClick={() => handleRemoveNewRoute(item.id)}>✖</div>*/}
+                <div className="container-path-name"> {item.name} </div>
+
+                <div>
+                  <label>Личное время прохождения:</label>
+                  <input type="text" className="my-path-time" />
+                </div>
+
+                <div className="recommendations">
+                  <div className="comment">Комментарии о маршруте:</div>
+                  <textarea></textarea>
+                </div>
+              </div>
+            )
+          }
+      </div>
+
     </div>
   );
 }
