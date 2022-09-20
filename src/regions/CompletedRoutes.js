@@ -33,9 +33,13 @@ function CompletedRoutes() {
     <div>
       <ButtonComeBack />
       <CompletedIcon regionId={regionId} />
-      <RoutesList routes={completedRoutes} actionText='✖' actionFunction={handleRemoveNewRoute} />
 
-      <div>
+      <div className="flex-container">
+        <div className="left-container">
+          <RoutesList routes={completedRoutes} actionText='✖' actionFunction={handleRemoveNewRoute} />
+        </div>
+
+        <div className="right-container">
         {
           completedRoutes.map((item, idx) =>
               <div className="personal-column" key={`route-${idx}`}>
@@ -54,8 +58,8 @@ function CompletedRoutes() {
               </div>
             )
           }
+        </div>
       </div>
-
     </div>
   );
 }

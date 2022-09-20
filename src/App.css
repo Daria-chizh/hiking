@@ -259,3 +259,20 @@ textarea {
 }
 
 
+.flex-container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.left-container {
+  height: 300px;
+  flex-grow: 3;
+}
+
+.right-container {
+  height: 300px;
+  flex-grow: 3;
+  margin-top: -70px;
+}

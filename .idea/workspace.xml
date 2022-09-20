@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a299c05-ce8f-4489-a6d4-1721b907a09d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/regions/RegionRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/regions/CompletedIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/CompletedIcon.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/regions/CompletedRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/CompletedRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/regions/RegionFull.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/RegionFull.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/regions/RegionRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/RegionRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/regions/RoutesSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/RoutesSearch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +79,7 @@
       <workItem from="1661071286423" duration="22376000" />
       <workItem from="1661316441870" duration="1466000" />
       <workItem from="1661318821764" duration="80764000" />
-      <workItem from="1663561651363" duration="9600000" />
+      <workItem from="1663561651363" duration="11835000" />
     </task>
     <task id="LOCAL-00001" summary="I made first page">
       <created>1657604560294</created>
@@ -129,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662962209385</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="I made field which is called my results (personal time and comments)">
+      <created>1663652629318</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663652629318</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +154,7 @@
     <MESSAGE value="I wrote props in component of CompletedIcon" />
     <MESSAGE value="I made component RoutesList and I wrote props" />
     <MESSAGE value="I made component ButtonComeBack" />
-    <option name="LAST_COMMIT_MESSAGE" value="I made component ButtonComeBack" />
+    <MESSAGE value="I made field which is called my results (personal time and comments)" />
+    <option name="LAST_COMMIT_MESSAGE" value="I made field which is called my results (personal time and comments)" />
   </component>
 </project>
