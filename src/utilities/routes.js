@@ -1,12 +1,14 @@
 import { regionsRoutes } from '../regions/data/regionsRoutes';
 
-export function filterRoutesByCompleteness(regionId, completedRoutesId, isComplete) {
+export function filterRoutesByCompleteness(regionId, completedRoutes, isComplete) {
   const routes = [];
 
   const regionRoutes = regionsRoutes.find(({ id }) => String(id) === String(regionId)).routes;
   for (const item of regionRoutes) {
-    if (isComplete ? completedRoutesId.includes(item.id) : !completedRoutesId.includes(item.id)) {
-      routes.push(item);
+    const completedRoute = completedRoutes.find(({ id }) => id === item.id);
+    if ((isComplete && completedRoute) || (!isComplete && !completedRoute)) {
+      const { time, description } = completedRoute || {};
+      routes.push({ ...item, time, description });
     }
   }
 

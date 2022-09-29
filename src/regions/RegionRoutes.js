@@ -12,8 +12,8 @@ function RegionRoutes() {
   const { regionId } = useParams();
   const dispatch = useDispatch();
 
-  const completedRoutesId = useSelector((state) => state.routes);
-  const uncompletedRoutes = filterRoutesByCompleteness(regionId, completedRoutesId, false);
+  const completedRoutes = useSelector((state) => state.routes);
+  const uncompletedRoutes = filterRoutesByCompleteness(regionId, completedRoutes, false);
 
   const handleAddNewRoute = (routeId) => {
     dispatch(addRouteToCompleted(routeId));

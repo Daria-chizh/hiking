@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { removeRouteFromCompleted } from '../redux/actions/actionCreators';
+import { addInfoForCompletedRoute, removeRouteFromCompleted } from '../redux/actions/actionCreators';
 import CompletedIcon from './CompletedIcon';
 import { filterRoutesByCompleteness } from '../utilities/routes';
 import RoutesList from './RoutesList';
@@ -29,6 +29,14 @@ function CompletedRoutes() {
     dispatch(removeRouteFromCompleted(routeId))
   }
 
+  const handleValueTime = (time) => {
+    dispatch(addInfoForCompletedRoute(time))
+  };
+
+  const handleValueDescription = (description) => {
+    dispatch(addInfoForCompletedRoute(description))
+  };
+
   return (
     <div>
       <ButtonComeBack />
@@ -43,17 +51,16 @@ function CompletedRoutes() {
         {
           completedRoutes.map((item, idx) =>
               <div className="personal-column" key={`route-${idx}`}>
-                {/*<div className="plus" onClick={() => handleRemoveNewRoute(item.id)}>✖</div>*/}
                 <div className="container-path-name"> {item.name} </div>
 
                 <div>
                   <label>Личное время прохождения:</label>
-                  <input type="text" className="my-path-time" />
+                  <input type="text" className="my-path-time"onChange={handleValueTime} /> {item.value}
                 </div>
 
                 <div className="recommendations">
                   <div className="comment">Комментарии о маршруте:</div>
-                  <textarea></textarea>
+                  <textarea onChange={handleValueDescription}>{item.value}</textarea>
                 </div>
               </div>
             )

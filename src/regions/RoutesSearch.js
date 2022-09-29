@@ -11,7 +11,6 @@ function RoutesSearch() {
 
     if (value) {
       for (const element of regionsRoutes) {
-        console.log(element);
         for (const { id, name, distance, elevation, averagePassageTime } of element.routes) {
           if (name.includes(value)) {
             matched.push({regionId: element.id, id: id, name: name, distance: distance, elevation: elevation, averagePassageTime: averagePassageTime});
@@ -19,7 +18,6 @@ function RoutesSearch() {
         }
       }
     }
-
     setMatchedRoutes(matched);
     setSearchText(value);
   }

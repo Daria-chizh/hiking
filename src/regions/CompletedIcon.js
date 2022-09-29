@@ -6,6 +6,7 @@ export default function CompletedIcon(props) {
   const { regionId } = props;
   const completedRouteIds = useSelector((state) => state.routes);
   const completedRoutes = filterRoutesByCompleteness(regionId, completedRouteIds, true);
+
   return (
     <>
       <div className="completed">
