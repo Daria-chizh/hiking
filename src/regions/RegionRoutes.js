@@ -23,7 +23,7 @@ function RegionRoutes() {
     <div>
       <ButtonComeBack />
       <CompletedIcon regionId={regionId} />
-      <RoutesList routes={uncompletedRoutes} actionText='✔' actionFunction={handleAddNewRoute} />
+      <RoutesList routes={uncompletedRoutes} actionText='' actionFunction={handleAddNewRoute} />
     </div>
   );
 }

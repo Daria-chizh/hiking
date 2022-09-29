@@ -33,35 +33,28 @@ function RegionRoute() {
     <div>
       <ButtonComeBack />
       <CompletedIcon regionId={regionId} />
+      <div className="margin-top">
+        <div className="total-container">
+          <div className="container">
+            <div className="new-field-column">
+              {
+                completedRoutes.map(item => item.id).includes(route.id) ?
+                  <div>
+                    <div className="close" onClick={() => handleRemoveNewRoute(route.id)}>✖</div>
+                    <div className="new-field-path-name"> {route.name} </div>
+                  </div> :
 
-
-
-        <div className="margin-top">
-          <div className="total-container">
-            <div className="container">
-              <div className="new-field-column">
-
-                {
-                  completedRoutes.map(item => item.id).includes(route.id) ?
-                    <div className="plus" onClick={handleRemoveNewRoute}>✖</div> :
-                    <div className="plus" onClick={handleAddNewRoute}>✔</div>
-                }
-
-
-                <div className="new-field-path-name"> {route.name} </div>
-                <div className="path-distance">Расстояние: {route.distance}</div>
-                <div className="path-elevation"> Набор высоты: {route.elevation} </div>
-                <div className="path-time"> Среднее время прохождения: {route.averagePassageTime}</div>
-              </div>
+                  <div className="add" onClick={() => handleAddNewRoute(route.id)}>
+                    <div className="new-field-path-name-completed"> {route.name} </div>
+                  </div>
+              }
+              <div className="path-distance">Расстояние: {route.distance}</div>
+              <div className="path-elevation"> Набор высоты: {route.elevation} </div>
+              <div className="path-time"> Среднее время прохождения: {route.averagePassageTime}</div>
             </div>
           </div>
         </div>
-
-
-        {/*}routeId.includes(completedRoutes) ?*/}
-        {/*  <RoutesList routes={route} actionText='✖' actionFunction={handleRemoveNewRoute} />*/}
-        {/*  <RoutesList routes={route} actionText='✔' actionFunction={handleAddNewRoute} />*/}
-
+      </div>
     </div>
   );
 }
