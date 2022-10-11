@@ -13,9 +13,11 @@ import KuturchinskoeBelogorie from '../descriptions/KuturchinskoeBelogorie';
 import KachinskieStolbi from '../descriptions/KachinskieStolbi';
 import IvanovskiyLakes from '../descriptions/IvanovskiyLakes';
 import Divnogorsk from '../descriptions/Divnogorsk';
+import KrasnoyarskSurroundings from '../descriptions/KrasnoyarskSurroundings';
 
 import CompletedIcon from "./CompletedIcon";
 import ButtonComeBack from './ButtonComeBack';
+import KuraginskyDistrict from '../descriptions/KuraginskyDistrict';
 
 const regions = [
   {
@@ -77,6 +79,16 @@ const regions = [
     id: 12,
     img: 'https://gornovosti.ru/media/filer_public/a7/b9/a7b9f793-9139-4e75-86ec-304f29cff9fc/petlya.jpg',
     description: Divnogorsk()
+  },
+  {
+    id: 13,
+    img: 'https://ic.pics.livejournal.com/helen_i_rebyata/69641658/668165/668165_1000.jpg',
+    description: KrasnoyarskSurroundings()
+  },
+  {
+    id: 14,
+    img: 'https://www.nikava.ru/up/article/image/dostoprim_kr/chinzhebskiy_vodopad.jpg',
+    description: KuraginskyDistrict()
   },
 ];
 

@@ -15,6 +15,8 @@ const regions = [
   { regionId: 10, name: 'Качинские столбы', img: 'https://gorodprima.ru/wp-content/uploads/2020/07/kachinskie-stolby-glavnaya.jpg' },
   { regionId: 11, name: 'Ивановские озёра', img: 'https://cloud.pulse19.ru/uploads/2020/07/002_ivanovskiye_ozera_1-1.jpg' },
   { regionId: 12, name: 'Окресности Дивногорска', img: 'https://gornovosti.ru/media/filer_public/a7/b9/a7b9f793-9139-4e75-86ec-304f29cff9fc/petlya.jpg' },
+  { regionId: 13, name: 'Окресности Красноярска', img: 'https://ic.pics.livejournal.com/helen_i_rebyata/69641658/668165/668165_1000.jpg' },
+  { regionId: 14, name: 'Курагинский район', img: 'https://www.nikava.ru/up/article/image/dostoprim_kr/chinzhebskiy_vodopad.jpg' },
 ];
 
 function Regions() {
