@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router';
 import { useSelector, useDispatch } from 'react-redux';
 
@@ -12,8 +12,9 @@ function CompletedRoutes() {
   const { regionId } = useParams();
   const dispatch = useDispatch();
 
-  const completedRouteIds = useSelector((state) => state.routes);
-  const completedRoutes = filterRoutesByCompleteness(regionId, completedRouteIds, true);
+  const completedRoutesInfo = useSelector((state) => state.routes);
+  const completedRoutes = filterRoutesByCompleteness(regionId, completedRoutesInfo, true);
+  console.log(completedRoutes);
 
   if (completedRoutes.length === 0) {
     return(
@@ -29,12 +30,14 @@ function CompletedRoutes() {
     dispatch(removeRouteFromCompleted(routeId))
   }
 
-  const handleValueTime = (time) => {
-    dispatch(addInfoForCompletedRoute(time))
+  const handleValueTime = (event, routeId) => {
+    const { value } = event.target;
+    dispatch(addInfoForCompletedRoute(routeId, value, undefined));
   };
 
-  const handleValueDescription = (description) => {
-    dispatch(addInfoForCompletedRoute(description))
+  const handleValueDescription = (event, routeId) => {
+    const { value } = event.target;
+    dispatch(addInfoForCompletedRoute(routeId, undefined, value));
   };
 
   return (
@@ -55,12 +58,12 @@ function CompletedRoutes() {
 
                 <div>
                   <label>Личное время прохождения:</label>
-                  <input type="text" className="my-path-time"onChange={handleValueTime} /> {item.value}
+                  <input type="text" className="my-path-time" value={item.time} onChange={(event) => handleValueTime(event, item.id)} />
                 </div>
 
                 <div className="recommendations">
                   <div className="comment">Комментарии о маршруте:</div>
-                  <textarea onChange={handleValueDescription}>{item.value}</textarea>
+                  <textarea value={item.description} onChange={(event) => handleValueDescription(event, item.id)}></textarea>
                 </div>
               </div>
             )

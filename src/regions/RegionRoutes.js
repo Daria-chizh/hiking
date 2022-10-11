@@ -20,7 +20,7 @@ function RegionRoutes() {
   };
 
   return (
-    <div>
+    <div className="background-color">
       <ButtonComeBack />
       <CompletedIcon regionId={regionId} />
       <RoutesList routes={uncompletedRoutes} actionText='' actionFunction={handleAddNewRoute} />

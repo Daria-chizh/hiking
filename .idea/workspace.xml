@@ -4,9 +4,10 @@
     <list default="true" id="0a299c05-ce8f-4489-a6d4-1721b907a09d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/regions/RegionRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/RegionRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store/localStorageMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store/localStorageMiddleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/regions/CompletedRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/CompletedRoutes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/regions/RegionRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/RegionRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/regions/RoutesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/RoutesList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/regions/data/regionsRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/regions/data/regionsRoutes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +82,8 @@
       <workItem from="1661071286423" duration="22376000" />
       <workItem from="1661316441870" duration="1466000" />
       <workItem from="1661318821764" duration="80764000" />
-      <workItem from="1663561651363" duration="47458000" />
+      <workItem from="1663561651363" duration="48850000" />
+      <workItem from="1664773223417" duration="30693000" />
     </task>
     <task id="LOCAL-00001" summary="I made first page">
       <created>1657604560294</created>
@@ -146,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664429563796</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="I continue adding and deleting routes in the field RegionRoute">
+      <created>1664446076750</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664446076750</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +182,7 @@
     <MESSAGE value="I made field which is called my results (personal time and comments)" />
     <MESSAGE value="I have used FLEX for columns." />
     <MESSAGE value="I continue to add information in field RegionRoute" />
-    <option name="LAST_COMMIT_MESSAGE" value="I continue to add information in field RegionRoute" />
+    <MESSAGE value="I continue adding and deleting routes in the field RegionRoute" />
+    <option name="LAST_COMMIT_MESSAGE" value="I continue adding and deleting routes in the field RegionRoute" />
   </component>
 </project>
